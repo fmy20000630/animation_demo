@@ -1,0 +1,124 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    html {
+        height: 100%;
+    }
+    
+    body {
+        height: 100%;
+        background: url('../images/f1_1.jpg') no-repeat center;
+        /* 缩放背景图 */
+        background-size: cover;
+    }
+    
+    .cloud img {
+        position: absolute;
+        left: 50%;
+        top: 0;
+    }
+    
+    .cloud img:nth-child(1) {
+        top: 20px;
+        margin-left: -300px;
+        animation: cloud 1s infinite alternate;
+    }
+    
+    .cloud img:nth-child(2) {
+        top: 100px;
+        margin-left: 400px;
+        animation: cloud 1s infinite alternate 0.2s;
+    }
+    
+    .cloud img:nth-child(3) {
+        top: 200px;
+        margin-left: -550px;
+        animation: cloud 1s infinite alternate 0.4s;
+    }
+    
+    .font img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -140px;
+        margin-left: -320px;
+        animation: font .3s;
+        z-index: 1;
+    }
+    
+    .san img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -250px;
+        margin-left: -370px;
+        animation: san 1s infinite alternate linear;
+    }
+    
+    .lu img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -300px;
+        margin-left: 150px;
+        animation: lu .3s;
+    }
+    
+    .tags img {
+        position: absolute;
+        top: 75%;
+        left: 50%;
+    }
+    
+    .tags img:nth-child(1) {
+        margin-left: -450px;
+        animation: tags 0.7s infinite alternate;
+    }
+    
+    .tags img:nth-child(2) {
+        margin-left: -200px;
+        animation: tags 0.7s infinite alternate 0.2s;
+    }
+    
+    .tags img:nth-child(3) {
+        margin-left: 50px;
+        animation: tags 0.7s infinite alternate 0.5s;
+    }
+    
+    .tags img:nth-child(4) {
+        margin-left: 300px;
+        animation: tags 0.7s infinite alternate 0.8s;
+    }
+    /* 云彩动画 */
+    
+    @keyframes cloud {
+        to {
+            transform: translateX(20px);
+        }
+    }
+    
+    @keyframes font {
+        to {
+            transform: scale(1.2);
+        }
+    }
+    
+    @keyframes san {
+        to {
+            transform: translateY(-30px);
+        }
+    }
+    
+    @keyframes lu {
+        to {
+            transform: scale(1.2);
+        }
+    }
+    
+    @keyframes tags {
+        to {
+            transform: translateY(30px);
+        }
+    }
